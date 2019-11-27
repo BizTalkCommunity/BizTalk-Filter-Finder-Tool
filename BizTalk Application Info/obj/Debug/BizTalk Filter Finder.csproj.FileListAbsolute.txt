@@ -1,0 +1,33 @@
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\BizTalk Filter Finder.exe.config
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\BizTalk Filter Finder.exe
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\BizTalk Filter Finder.pdb
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.ExplorerOM.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.GlobalPropertySchemas.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.OrchestrationDesigner.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Studio.Extensibility.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\SHDocVw.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\VSLangProj.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.Compiler.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Studio.Utilities.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE80.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\stdole.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.OM.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.BaseFunctoids.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.MSXML.dll
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.ExplorerOM.xml
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\VSLangProj.xml
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE.xml
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE80.xml
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk Filter Finder.csprojResolveAssemblyReference.cache
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk Filter Finder.csproj.BizTalk Filter Finder.exe.config
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.mainForm.resources
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.Properties.Resources.resources
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk Filter Finder.csproj.GenerateResource.Cache
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk Filter Finder.exe
+C:\Users\chubb\Desktop\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk Filter Finder.pdb
