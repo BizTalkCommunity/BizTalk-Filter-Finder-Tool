@@ -34,8 +34,16 @@ namespace BizTalk_Filter_Finder
             doc.LoadXml(filter);
             XmlNodeList statementNodes = doc.SelectNodes("/Filter/Group/Statement");
             foreach (XmlNode node in statementNodes)
-                filters.Add(node.Attributes["Property"].Value + " " + ConvertOperator(node.Attributes["Operator"].Value) + " " + node.Attributes["Value"].Value);
-            return filters;
+                //if filter is missing, add all
+                if (searchtextTb.Text == string.Empty)
+                    filters.Add(node.Attributes["Property"].Value + " " + ConvertOperator(node.Attributes["Operator"].Value) + " " + node.Attributes["Value"].Value);
+                else
+                {
+                    //otherwise only show matches( ignore case)
+                    if (node.Attributes["Value"].Value.ToUpper().Contains(searchtextTb.Text.ToUpper()))
+                        filters.Add(node.Attributes["Property"].Value + " " + ConvertOperator(node.Attributes["Operator"].Value) + " " + node.Attributes["Value"].Value);
+                }
+                    return filters;
         }
         private string ConvertOperator(string opId)
         {
@@ -305,5 +313,6 @@ namespace BizTalk_Filter_Finder
             return value;
         }
         #endregion
+
     }
 }

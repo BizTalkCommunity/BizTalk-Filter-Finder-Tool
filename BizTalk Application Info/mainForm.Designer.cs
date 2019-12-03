@@ -42,6 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.connectbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.searchtextTb = new System.Windows.Forms.TextBox();
             this.selectAllCb = new System.Windows.Forms.CheckBox();
             this.loadInfoBtn = new System.Windows.Forms.Button();
             this.applicationsCLb = new System.Windows.Forms.CheckedListBox();
@@ -193,6 +195,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.searchtextTb);
             this.groupBox2.Controls.Add(this.selectAllCb);
             this.groupBox2.Controls.Add(this.loadInfoBtn);
             this.groupBox2.Controls.Add(this.applicationsCLb);
@@ -202,6 +206,22 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BizTalk Applications";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 393);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Search text:";
+            // 
+            // searchtextTb
+            // 
+            this.searchtextTb.Location = new System.Drawing.Point(89, 390);
+            this.searchtextTb.Name = "searchtextTb";
+            this.searchtextTb.Size = new System.Drawing.Size(99, 20);
+            this.searchtextTb.TabIndex = 11;
             // 
             // selectAllCb
             // 
@@ -218,9 +238,9 @@
             // 
             this.loadInfoBtn.Image = global::BizTalk_Filter_Finder.Properties.Resources.searchi;
             this.loadInfoBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.loadInfoBtn.Location = new System.Drawing.Point(6, 375);
+            this.loadInfoBtn.Location = new System.Drawing.Point(194, 372);
             this.loadInfoBtn.Name = "loadInfoBtn";
-            this.loadInfoBtn.Size = new System.Drawing.Size(337, 38);
+            this.loadInfoBtn.Size = new System.Drawing.Size(149, 38);
             this.loadInfoBtn.TabIndex = 10;
             this.loadInfoBtn.Text = "Search Filters";
             this.loadInfoBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -395,6 +415,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox searchtextTb;
     }
 }
 
