@@ -1,0 +1,57 @@
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.exe
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.pdb
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.ExplorerOM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.GlobalPropertySchemas.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.OrchestrationDesigner.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Studio.Extensibility.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\SHDocVw.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\VSLangProj.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.Compiler.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Studio.Utilities.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE80.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\stdole.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.OM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.BaseFunctoids.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.MSXML.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.ExplorerOM.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.Shell.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.OLE.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\VSLangProj.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\EnvDTE80.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csprojResolveAssemblyReference.cache
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csproj.DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.mainForm.resources
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.Properties.Resources.resources
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csproj.GenerateResource.Cache
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.exe
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.pdb
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.exe
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.pdb
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.exe
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\DevScope.BizTalk.FilterFinder.pdb
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\SHDocVw.dll
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.Compiler.dll
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.Mapper.OM.dll
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csprojResolveAssemblyReference.cache
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csproj.DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.mainForm.resources
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\BizTalk_Filter_Finder.Properties.Resources.resources
+C:\Development\PET Projects\BizTalk-Filter-Finder-Tool\BizTalk Application Info\obj\Debug\DevScope.BizTalk.FilterFinder.csproj.GenerateResource.Cache
