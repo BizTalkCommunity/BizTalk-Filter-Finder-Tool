@@ -20,10 +20,18 @@ namespace BizTalk_Filter_Finder
         private void mainForm_Load(object sender, EventArgs e)
         {
             var configs = ConfigurationManager.AppSettings;
-            serverTb.Text = configs["connServer"];
-            catalogTb.Text = configs["connDB"];
-            usernameTb.Text = configs["userDB"];
-            passwordTb.Text = configs["passDB"];
+            //serverTb.Text = configs["connServer"];
+            //catalogTb.Text = configs["connDB"];
+            //usernameTb.Text = configs["userDB"];
+            //passwordTb.Text = configs["passDB"];
+
+            foreach(var bizServ in configs.Keys)
+            {
+                if (bizServ.ToString().ToUpper().Contains("BIZTALK-ENV-"))
+                {
+                    serverBox.Items.Add(bizServ);
+                }
+            }
         }
 
         #region Helper Functions
@@ -64,41 +72,41 @@ namespace BizTalk_Filter_Finder
                 e.SuppressKeyPress = true;
             }
         }
-        private void integratedSecCb_CheckedChanged(object sender, EventArgs e)
-        {
-            if (integratedSecCb.Checked)
-                passwordTb.Enabled = usernameTb.Enabled = false;
-            else
-                passwordTb.Enabled = usernameTb.Enabled = true;
-        }
-        private void saveBtn_Click(object sender, EventArgs e)
-        {
-            var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            var settings = configFile.AppSettings.Settings;
+        //private void integratedSecCb_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (integratedSecCb.Checked)
+        //        passwordTb.Enabled = usernameTb.Enabled = false;
+        //    else
+        //        passwordTb.Enabled = usernameTb.Enabled = true;
+        //}
+        //private void saveBtn_Click(object sender, EventArgs e)
+        //{
+        //    var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+        //    var settings = configFile.AppSettings.Settings;
 
-            #region Save to App.Config
-            if (integratedSecCb.Checked)
-            {
-                settings["connServer"].Value = serverTb.Text;
-                settings["connDB"].Value = catalogTb.Text;
-                settings["connString"].Value = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=" +
-                    catalogTb.Text + ";Data Source=" + serverTb.Text;
-            }
-            else
-            {
-                settings["userDB"].Value = usernameTb.Text;
-                settings["passDB"].Value = passwordTb.Text;
-                settings["connServer"].Value = serverTb.Text;
-                settings["connDB"].Value = catalogTb.Text;
-                settings["connString"].Value = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=" +
-                    catalogTb.Text + ";Data Source=" + serverTb.Text +
-                    ";UserName=" + usernameTb.Text + ";Password=" + passwordTb.Text;
-            }
-            #endregion
+        //    #region Save to App.Config
+        //    if (integratedSecCb.Checked)
+        //    {
+        //        settings["connServer"].Value = serverTb.Text;
+        //        settings["connDB"].Value = catalogTb.Text;
+        //        settings["connString"].Value = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=" +
+        //            catalogTb.Text + ";Data Source=" + serverTb.Text;
+        //    }
+        //    else
+        //    {
+        //        settings["userDB"].Value = usernameTb.Text;
+        //        settings["passDB"].Value = passwordTb.Text;
+        //        settings["connServer"].Value = serverTb.Text;
+        //        settings["connDB"].Value = catalogTb.Text;
+        //        settings["connString"].Value = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=" +
+        //            catalogTb.Text + ";Data Source=" + serverTb.Text +
+        //            ";UserName=" + usernameTb.Text + ";Password=" + passwordTb.Text;
+        //    }
+        //    #endregion
 
-            configFile.Save(ConfigurationSaveMode.Modified);
-            ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
-        }
+        //    configFile.Save(ConfigurationSaveMode.Modified);
+        //    ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+        //}
         private void connectbtn_Click(object sender, EventArgs e)
         {
             try
@@ -116,85 +124,9 @@ namespace BizTalk_Filter_Finder
         }
         private void loadInfoBtn_Click(object sender, EventArgs e)
         {
-            sendInfoTree.Nodes.Clear();
-            orchestrationTree.Nodes.Clear();
-            try
-            {
-                using (var expl = new BtsCatalogExplorer() { ConnectionString = ConfigurationManager.AppSettings["connString"].ToString() })
-                {  //open connection
-                    foreach (string item in applicationsCLb.CheckedItems)
-                    {
-                        TreeNode node = null;
-                        if (sendInfoTree.Nodes.Find(item, false).Count() == 0)
-                        {
-                            //TreeNode node = sendInfoTree.Nodes.Add(item, item);
-                            bool addapp = true;
-                            foreach (SendPort port in expl.SendPorts)
-                            {
-                                #region SendPorts
-                                if (port.Application.Name == item && !string.IsNullOrEmpty(port.Filter))
-                                {
-                                    var nodes = ParsedFilter(port.Filter);
-                                    if (addapp)
-                                    {
-                                        node = sendInfoTree.Nodes.Add(item, item);
-                                        addapp = false;
-                                    }
-                                    if (nodes.Count > 0)
-                                    { 
-                                        var sendNode = node.Nodes.Add(port.Name);
-                                        if (port.PrimaryTransport != null)
-                                            sendNode.Nodes.Add("Address: " + port.PrimaryTransport.Address);
-                                        sendNode.Nodes.Add("Filter XML: " + port.Filter);
-                                    
-                                        foreach (var v in nodes)
-                                            sendNode.Nodes.Add("Subscription: " + v);
-                                        node.Expand();
-                                    }
-                                }
-                                #endregion
-                            }
-                        }
-                    }
-                }
-
-                using (SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["connString"].ToString().Replace("BiztalkMgmtDb", "BizTalkMsgBoxDb")))
-                {
-                    Assembly myAssembly = Assembly.Load("Microsoft.BizTalk.GlobalPropertySchemas");
-                    foreach (string item in applicationsCLb.CheckedItems)
-                    {
-                        if (orchestrationTree.Nodes.Find(item, false).Count() == 0)
-                        {
-                            object predicateGroupId = GetPredicateGroupID(conn, item);
-                            if (predicateGroupId != null)
-                            {
-                                #region Get predicates
-                                TreeNode node = orchestrationTree.Nodes.Add(item, item);
-                                string pGID = predicateGroupId.ToString();
-                                SqlCommand comm = new SqlCommand();
-                                SqlDataAdapter da = new SqlDataAdapter();
-                                DataTable dt = new DataTable();
-                                GetEqualsPredicates(conn, myAssembly, node, pGID, comm, da, dt);
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[BitwiseANDPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[EqualsPredicates2ndPass]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[ExistsPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[GreaterThanOrEqualsPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[GreaterThanPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[LessThanPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[LessThanOrEqualsPredicates]");
-                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[NotEqualsPredicates]");
-                                node.Expand();
-                                #endregion
-                            }
-                        }
-                    }
-                }
-            }
-            catch (SqlException sqlex)
-            { throw sqlex; }
-            catch (Exception ex)
-            { throw ex; }
+            LoadFilterInformation();
         }
+
         private void selectAllCb_CheckedChanged(object sender, EventArgs e)
         {
             if (selectAllCb.Checked)
@@ -211,6 +143,28 @@ namespace BizTalk_Filter_Finder
         #endregion
 
         #region Predicates Fetch
+        private string GetMessageBoxServer(SqlConnection conn)
+        {
+            string server="";
+            using (var cmd = new SqlCommand("MBOM_GetMessageBoxes", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            })
+            {
+                conn.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    // iterate through results, printing each to console
+                    while (rdr.Read())
+                    {
+                        server = rdr["DBServerName"].ToString();
+                    }
+                }
+                conn.Close();
+            }
+            return server;
+        }
+
         private object GetPredicateGroupID(SqlConnection conn, string item)
         {
             SqlCommand comm = new SqlCommand()
@@ -305,5 +259,164 @@ namespace BizTalk_Filter_Finder
             return value;
         }
         #endregion
+
+        private void showFiltersButton_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(filterConditionText.Text))
+            {
+                LoadFilterInformation();
+
+                string condText = filterConditionText.Text;
+                TreeNodeCollection nodes = sendInfoTree.Nodes;
+                if (nodes.Count > 0)
+                {
+                    for (int i = (nodes.Count - 1); i >= 0; i--)
+                    {
+                        TreeNode appNode = nodes[i];
+                        if (appNode != null)
+                        {
+                            bool delApp = true;
+
+                            var portNodes = appNode.Nodes;
+
+                            for (int j = (portNodes.Count - 1); j >= 0; j--)
+                            {
+                                TreeNode portNode = portNodes[j];
+                                if (portNode != null)
+                                {
+                                    bool delPort = true;
+                                    foreach (TreeNode subs in portNode.Nodes)
+                                    {
+                                        if (subs.Text.Contains("Subscription") && subs.Text.ToUpper().Contains(condText.ToUpper()))
+                                        {
+                                            delPort = false;
+                                            delApp = false;
+                                        }
+                                    }
+                                    if (delPort)
+                                    {
+                                        portNode.Remove();
+                                    }
+                                }
+                            }
+                            if (delApp)
+                            {
+                                appNode.Remove();
+                            }
+                        }
+
+                    }
+                }
+            }
+            else
+            {
+                LoadFilterInformation();
+            }
+        }
+
+        private void serverBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var settings = configFile.AppSettings.Settings;            
+            settings["connString"].Value = ConfigurationManager.AppSettings[serverBox.Text].ToString();
+            configFile.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+        }
+
+        private void LoadFilterInformation()
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            System.Windows.Forms.Application.DoEvents();
+
+            sendInfoTree.Nodes.Clear();
+            orchestrationTree.Nodes.Clear();
+            string msgBoxDbConnString = "";
+            try
+            {
+                using (var expl = new BtsCatalogExplorer() { ConnectionString = ConfigurationManager.AppSettings["connString"].ToString() })
+                {  //open connection
+                    foreach (string item in applicationsCLb.CheckedItems)
+                    {
+                        TreeNode node = null;
+                        if (sendInfoTree.Nodes.Find(item, false).Count() == 0)
+                        {
+                            bool addapp = true;
+                            foreach (SendPort port in expl.SendPorts)
+                            {
+                                #region SendPorts
+                                if (port.Application.Name == item && !string.IsNullOrEmpty(port.Filter))
+                                {
+                                    var nodes = ParsedFilter(port.Filter);
+                                    if (addapp)
+                                    {
+                                        node = sendInfoTree.Nodes.Add(item, item);
+                                        addapp = false;
+                                    }
+                                    if (nodes.Count > 0)
+                                    {
+                                        var sendNode = node.Nodes.Add(port.Name);
+                                        if (port.PrimaryTransport != null)
+                                            sendNode.Nodes.Add("Address: " + port.PrimaryTransport.Address);
+                                        sendNode.Nodes.Add("Filter XML: " + port.Filter);
+
+                                        foreach (var v in nodes)
+                                            sendNode.Nodes.Add("Subscription: " + v);
+                                        node.Expand();
+                                    }
+                                }
+                                #endregion
+                            }
+                        }
+                    }
+                }
+
+                using (SqlConnection connBiztalkMgmtDb = new SqlConnection(ConfigurationManager.AppSettings["connString"].ToString()))
+                {
+                    msgBoxDbConnString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BizTalkMsgBoxDb;Data Source=" + GetMessageBoxServer(connBiztalkMgmtDb);
+                }
+
+                using (SqlConnection conn = new SqlConnection(msgBoxDbConnString))
+                {
+                    Assembly myAssembly = Assembly.Load("Microsoft.BizTalk.GlobalPropertySchemas");
+                    foreach (string item in applicationsCLb.CheckedItems)
+                    {
+                        if (orchestrationTree.Nodes.Find(item, false).Count() == 0)
+                        {
+                            object predicateGroupId = GetPredicateGroupID(conn, item);
+                            if (predicateGroupId != null)
+                            {
+                                #region Get predicates
+                                TreeNode node = orchestrationTree.Nodes.Add(item, item);
+                                string pGID = predicateGroupId.ToString();
+                                SqlCommand comm = new SqlCommand();
+                                SqlDataAdapter da = new SqlDataAdapter();
+                                DataTable dt = new DataTable();
+                                GetEqualsPredicates(conn, myAssembly, node, pGID, comm, da, dt);
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[BitwiseANDPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[EqualsPredicates2ndPass]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[ExistsPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[GreaterThanOrEqualsPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[GreaterThanPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[LessThanPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[LessThanOrEqualsPredicates]");
+                                GetPredicates(conn, myAssembly, node, pGID, comm, da, dt, "[NotEqualsPredicates]");
+                                node.Expand();
+                                #endregion
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (SqlException sqlex)
+            { throw sqlex; }
+            catch (Exception ex)
+            { throw ex; }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+            }
+        }
     }
 }
