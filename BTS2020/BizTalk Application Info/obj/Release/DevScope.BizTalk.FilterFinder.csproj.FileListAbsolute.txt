@@ -1,0 +1,88 @@
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.exe
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.pdb
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.ExplorerOM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.GlobalPropertySchemas.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.OrchestrationDesigner.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.XLANGs.BaseTypes.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Studio.Extensibility.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\SHDocVw.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\VSLangProj.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\EnvDTE.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Mapper.Compiler.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Studio.Utilities.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\EnvDTE80.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Pipeline.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.XLANGs.Engine.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\stdole.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Mapper.OM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.TOM.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.BaseFunctoids.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.MSXML.dll
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.BizTalk.ExplorerOM.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.OLE.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\VSLangProj.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\EnvDTE.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\EnvDTE80.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.xml
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.csproj.DevScope.BizTalk.FilterFinder.exe.config
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\BizTalk_Filter_Finder.mainForm.resources
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\BizTalk_Filter_Finder.Properties.Resources.resources
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.csproj.GenerateResource.Cache
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.exe
+C:\Development\Pet Projects\BizTalk Tools\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.pdb
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.exe.config
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.exe
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\DevScope.BizTalk.FilterFinder.pdb
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.GlobalPropertySchemas.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Studio.Extensibility.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\SHDocVw.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\VSLangProj.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\EnvDTE.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Mapper.Compiler.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Studio.Utilities.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\EnvDTE80.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\saxon9he-api.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\stdole.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.Mapper.OM.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.TOM.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.BizTalk.BaseFunctoids.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.XML.API.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\saxon9he.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.Core.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.Runtime.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.Text.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.Charsets.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.Util.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\IKVM.OpenJDK.Security.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.MSXML.dll
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.OLE.Interop.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\VSLangProj.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\EnvDTE.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\EnvDTE80.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.xml
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.csprojAssemblyReference.cache
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.exe.config
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\BizTalk_Filter_Finder.mainForm.resources
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\BizTalk_Filter_Finder.Properties.Resources.resources
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.csproj.GenerateResource.cache
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.csproj.CopyComplete
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.exe
+C:\DEV\Pet Projects\DevScope.BizTalk.FilterFinder\BizTalk Application Info\obj\Release\DevScope.BizTalk.FilterFinder.pdb
